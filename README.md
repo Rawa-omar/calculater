@@ -17,8 +17,8 @@
 - **CSS3**: لتنسيق العناصر وإنشاء تصميم عصري ومتجاوب.
 - **JavaScript**: لتنفيذ العمليات الحسابية والتفاعل مع المستخدم.
 
-
--[يمكنك تجربة الحاسبة بسهولة من خلال :](https://rawa-omar.github.io/calculater/)
+## يمكنك تجربة الحاسبة بسهولة من خلال :
+-[simple Calculater ](https://rawa-omar.github.io/calculater/)
 
 ---
 تم تطوير هذا المشروع من قبل [Rawa omar ] ❤️
