@@ -113,53 +113,60 @@
     }
   </style>
 </head>
+
 <body>
+  <main>
 
-<div class="calculator">
-  <h2>آلة حاسبة</h2>
-  <input type="number" id="num1" placeholder="الرقم الأول">
-  <input type="number" id="num2" placeholder="الرقم الثاني">
-  <div class="operations">
-    <button onclick="calculate('add')"><i class="fas fa-plus"></i></button>
-    <button onclick="calculate('subtract')"><i class="fas fa-minus"></i></button>
-    <button onclick="calculate('multiply')"><i class="fas fa-times"></i></button>
-    <button onclick="calculate('divide')"><i class="fas fa-divide"></i></button>
-  </div>
-  <div class="result" id="result">النتيجة: <span>-</span></div>
-</div>
 
-<script>
-  function calculate(operation) {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const resultElement = document.getElementById('result').querySelector('span');
 
-    if (isNaN(num1) || isNaN(num2)) {
-      resultElement.textContent = 'يرجى إدخال أرقام صحيحة';
-      return;
-    }
-
-    let result;
-    switch (operation) {
-      case 'add':
-        result = num1 + num2;
-        break;
-      case 'subtract':
-        result = num1 - num2;
-        break;
-      case 'multiply':
-        result = num1 * num2;
-        break;
-      case 'divide':
-        result = num1 / num2;
-        break;
-      default:
-        result = 'خطأ في العملية';
-    }
-
-    resultElement.textContent = result;
-  }
-</script>
+      <div class="calculator">
+        <h2>آلة حاسبة</h2>
+        <input type="number" id="num1" placeholder="الرقم الأول">
+        <input type="number" id="num2" placeholder="الرقم الثاني">
+        <div class="operations">
+          <button onclick="calculate('add')"><i class="fas fa-plus"></i></button>
+          <button onclick="calculate('subtract')"><i class="fas fa-minus"></i></button>
+          <button onclick="calculate('multiply')"><i class="fas fa-times"></i></button>
+          <button onclick="calculate('divide')"><i class="fas fa-divide"></i></button>
+        </div>
+        <div class="result" id="result">النتيجة: <span>-</span></div>
+      </div>
+      
+      <script>
+        function calculate(operation) {
+          const num1 = parseFloat(document.getElementById('num1').value);
+          const num2 = parseFloat(document.getElementById('num2').value);
+          const resultElement = document.getElementById('result').querySelector('span');
+      
+          if (isNaN(num1) || isNaN(num2)) {
+            resultElement.textContent = 'يرجى إدخال أرقام صحيحة';
+            return;
+          }
+      
+          let result;
+          switch (operation) {
+            case 'add':
+              result = num1 + num2;
+              break;
+            case 'subtract':
+              result = num1 - num2;
+              break;
+            case 'multiply':
+              result = num1 * num2;
+              break;
+            case 'divide':
+              result = num1 / num2;
+              break;
+            default:
+              result = 'خطأ في العملية';
+          }
+      
+          resultElement.textContent = result;
+        }
+      </script>
+      
+     
+  </main>
 
 </body>
 </html>
